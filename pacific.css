@@ -22,7 +22,7 @@ nav {
     font-weight: bold;
 }
 h1,h2,h3{
-    font: Georgia, 'Times New Roman', Times, Serif
+    font-family: Georgia, 'Times New Roman', Times, Serif;
 }
 
 h2,h3{
@@ -48,6 +48,14 @@ td,th{
 
 td{
     text-align: center
+}
+
+label, textarea{
+    display:block;
+}
+
+input, textarea{
+    margin-bottom: bottom 1.5em;
 }
 
 .left{
