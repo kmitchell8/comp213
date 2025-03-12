@@ -1,18 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
-    background-color:#90C7E3;
-    background-image: linear-gradient(#90C7E3, #ffffff);
-    background-repeat: no-repeat;
+    background-color:#88D8ED;
+    font-family: Arial, Helvetica, sans-serif;
     color:#666666;
+    height: 100vh;
 }
 
 header {
     background-color:#000033;
-    background-image: url(images/sunset.jpg);
+    
     background-position: right;
     background-repeat: no-repeat;
-    height: 60px;
+    height: 120px;
     text-align: center;
     padding-top: 15px;
+    padding-left: 3em;
     color:#FFFFFF;
 
 }
@@ -22,11 +27,20 @@ main{
     padding-right: 20px;
     padding-left: 20px;
     display: block;
+    width:70%;
+    background-color: #FFFFFF;
+}
+
+main ul{
+
+    list-style-image: url(images/marker.gif);
 }
 
 h1{
     margin-bottom:0px;
     margin-top: 0px;
+    font-size: 3em;
+    letter-spacing: 0.25em;
 }
 
 h2{
@@ -34,10 +48,33 @@ h2{
 }
 
 nav {
-    background-color:#FFFFFF;
+    
     font-weight: bold;
-    padding: 10;
+    padding: 1.5em;
+    font-size: 120%;
+    width:30%;
 
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+nav a :link{
+    color:#5C7FA3;
+}
+nav a :visited{
+    color:#344873;
+}
+nav a :hover{
+    color: #a52a2a;
+}
+nav,main{
+
+    display: inline-block;
+    vertical-align: top;
 }
 h1,h2,h3{
     font-family: Georgia, 'Times New Roman', Times, Serif;
@@ -50,6 +87,7 @@ h2,h3{
 footer{
     font-size: 75%;
     padding: 20px;
+    background-color: #FFFFFF;
 }
 
 table,td,th{
@@ -96,6 +134,8 @@ input, textarea{
     min-width: 960px;
     max-width: 1240px;
     box-shadow:3px 3px #000033;
+    background-color:#90C7E3;
+    background-image: linear-gradient(#90C7E3, #ffffff);
 }
 
 #homehero {
