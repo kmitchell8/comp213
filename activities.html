@@ -4,7 +4,7 @@
         <title>Pacific Trails Resort - Yurts</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="pacific.css">
-        §<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="wrapper">
@@ -25,19 +25,28 @@
                 <h3>Hiking </h3>
                 <p>Pacific Trails Resort has 5 miles of hiking trails and is adjacent to a state park. Go it alone or join one of our guided hikes.
                 </p>
-                <h2>Kayaking</h3>
+                <h3>Kayaking</h3>
                     <p>Ocean Kayaks are available for guest use.</p>
                 <h3>Bird Watching</h3>
                    <p>While anytime is a good time for bird watching at Pacific Trails. We offer guided bird watching trips at sunrise several times a week.”
-                    </p>
-    
-    
-    
-    
-            </main>
+                    </p> 
+                    <div id="thumbnails">
+                        <img alt="" width="120" height="90" src="images/photo1.jpg" onclick="swapImnage(this)">
+                        <img alt="" width="120" height="90" src="images/photo2.jpg" onclick="swapImnage(this)">
+                        <img alt="" width="120" height="90" src="images/photo3.jpg" onclick="swapImnage(this)">
+                        <img alt="" width="120" height="90" src="images/photo4.jpg" onclick="swapImnage(this)">
+                    </div>
+                    <img id="bigImage" alt="" width="400" height="300" src="images/photo1.jpg">
+                </main>
             <footer>
                 Copyright &copy; 2025 Pacific Trails Resort
             </footer>
         </div>
+        <script>
+            function swapImnage(clicked){
+                var bigImage = document.getElementById("bigImage");
+                bigImage.src=clicked.src;
+            }
+        </script>
     </body>
 </html>
